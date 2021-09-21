@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+    <article value="hi  ">
+      dfdffdfd
+    </article>
+
+  <body>
+    <input type="button" value="fetch" onclick="
+
+      /*  fetch('html').then(function(response){
+        console.log(response);
+      response.text().then(function(a){
+        console.log(a);
+        document.querySelector('article').innerHTML= a;
+
+        })
+      })
+      */
+
+
+
+      //Asynonus
+      fetch('html').then(function(response){
+       console.log(response);
+       if(response.status==404){
+         alert('Not Found');
+       }
+      });
+      console.log(1);
+      console.log(2);
+
+
+    ">
+  </body>
+</html>
